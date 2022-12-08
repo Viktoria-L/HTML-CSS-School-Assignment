@@ -1,0 +1,24 @@
+.navbar-item img.my-logo {
+    width: 150px;
+    height: 68px;
+    max-height: 68px;
+}
+.navbar-end .navbar-item {
+       font-family: $quicksand;
+       font-weight: bold;
+    
+    &:hover {
+        color: $light-green;
+        background: $header-color; 
+        &:not(:last-child) {       
+        border-bottom: 3px solid $light-green;
+        }
+    }
+}
+.navbar-burger span, .navbar-item.my-link {
+    color: $light-green;
+}
+
+.fa-solid {
+    color: $dark-green;
+}

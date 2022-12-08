@@ -1,0 +1,49 @@
+html, body.my-body { 
+    background-color: $beige;   
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.is-fullheight{
+    height:100vh;
+}
+
+.button.my-btn {
+    background: $yellow;
+    border: $yellow;
+    transition-duration: 0.4s;
+    &:hover {
+        background: hsl(57, 96%, 45%);
+    }
+    &:focus{
+        border: #fcf45d;
+    }
+}
+.button.is-focused:not(:active), .button:focus:not(:active){
+    box-shadow: none;
+}
+
+body.my-body{
+    @include font;
+}
+.title {
+    color: $dark-green;
+
+}
+a.my-link {
+    color: $light-green;
+}
+i.fa-brands{
+    color: $light-green;
+    font-size: 1.5em;
+
+    @include mobile {
+        font-size: 1.25em;
+    }
+}
+label {
+    font-size: 12px;
+    
+}

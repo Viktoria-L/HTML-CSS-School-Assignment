@@ -1,0 +1,165 @@
+html, body.my-body {
+  background-color: #F0EAD2;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.is-fullheight {
+  height: 100vh;
+}
+
+.button.my-btn {
+  background: #fcf45d;
+  border: #fcf45d;
+  transition-duration: 0.4s;
+}
+.button.my-btn:hover {
+  background: hsl(57deg, 96%, 45%);
+}
+.button.my-btn:focus {
+  border: #fcf45d;
+}
+
+.button.is-focused:not(:active), .button:focus:not(:active) {
+  box-shadow: none;
+}
+
+body.my-body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.title {
+  color: #013819;
+}
+
+a.my-link {
+  color: #B9D989;
+}
+
+i.fa-brands {
+  color: #B9D989;
+  font-size: 1.5em;
+}
+@media (max-width: 768px) {
+  i.fa-brands {
+    font-size: 1.25em;
+  }
+}
+
+label {
+  font-size: 12px;
+}
+
+.header nav {
+  background-color: #144121;
+}
+
+.navbar-item img.my-logo {
+  width: 150px;
+  height: 68px;
+  max-height: 68px;
+}
+
+.navbar-end .navbar-item {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+}
+.navbar-end .navbar-item:hover {
+  color: #B9D989;
+  background: #144121;
+}
+.navbar-end .navbar-item:hover:not(:last-child) {
+  border-bottom: 3px solid #B9D989;
+}
+
+.navbar-burger span, .navbar-item.my-link {
+  color: #B9D989;
+}
+
+.fa-solid {
+  color: #013819;
+}
+
+@media (min-width: 768px) {
+  .my-border {
+    border: 10px dotted #013819;
+    padding: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tile.is-ancestor.my-tile {
+    margin-top: 10px;
+  }
+}
+
+h1.my-title {
+  font-family: "Pacifico", cursive;
+}
+
+.sort {
+  width: 80%;
+  height: 50%;
+}
+.sort .filter-items {
+  border-bottom: 1px solid #013819;
+  width: 100%;
+  min-height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+.sort .filter-items .checkboxes {
+  margin: 4px 0;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.product {
+  width: 30%;
+  height: 30%;
+  background: #FFFFFB;
+  padding: 5px;
+  border-radius: 3px;
+}
+.product:hover {
+  transform: scale(1.03);
+}
+@media (max-width: 475px) {
+  .product {
+    width: 45%;
+    height: 30%;
+  }
+}
+
+.my-img {
+  width: 80%;
+  height: 200px;
+  border-radius: 3px;
+}
+
+.my-footer {
+  background-color: #144121;
+  padding: 0;
+}
+.my-footer .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.my-footer .column .title {
+  color: #B9D989;
+}/*# sourceMappingURL=style.css.map */

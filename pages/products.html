@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art of Plants</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./../Styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body class="my-body">
+  <div class="columns is-flex-direction-column is-fullheight mt-0">
+ <!--HEADER-->  
+    <header class="column is-narrow header pt-0 pb-0">
+        <!-- Navigation bar-->
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="./../start.html">
+                <img class="my-logo" src="./../images/Smallsvg2.svg" width="112" height="68">
+              </a>
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a class="button my-btn is-small is-hidden-desktop">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                  <a class="button my-btn is-small is-hidden-desktop">
+                      <i class="fa-solid fa-user"></i>
+                  </a>
+                </div>
+              </div>
+              
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                  <span aria-hidden="true"></span>
+                </a>
+            </div>
+            
+            
+            <div id="navbarBasicExample" class="navbar-menu">
+                                  
+              <div class="navbar-end">
+                <a class="navbar-item my-link" href="./../start.html">
+                    Hem                 
+                  </a>
+            
+                  <a class="navbar-item my-link" href="products.html">
+                    Produkter
+                  </a>
+                  <a class="navbar-item my-link" href="reviews.html">
+                    Kundomdömen
+                  </a>
+            
+                  <a class="navbar-item my-link" href="about.html">
+                    Om oss
+                  </a>
+                  <a class="navbar-item my-link" href="contact.html">
+                    Kontakt
+                  </a>
+                 
+                <div class="navbar-item my-link is-hidden-touch">
+                  <div class="buttons">
+                    <a class="button my-btn is-small is-hidden-touch">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                    <a class="button my-btn is-small is-hidden-touch">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </nav>
+    </header>
+<!--MAIN-->
+    <main class="column">  
+        <section class="section">
+            <h1 class="title is-size-4-mobile my-title has-text-centered">Produkter</h1>
+        </section> 
+<!--SORTERING-->
+        <div class="columns">
+            <div class="column is-flex is-justify-content-center">
+                <div class="sort">
+                    <div class="filter-items is-flex is-justify-content-space-between">
+                        <div class="is-flex">
+                            <p class="title is-6 my-2 mx-2">Filter</p>        
+                        </div>
+                                    
+                            <div><p class="title is-6 my-2 mx-2">Reset</p></div>
+                    </div>
+                    <div class="filter-items is-hidden-mobile">
+                        <div class="dropdown my-1">
+                            <div class="dropdown-trigger">
+                              <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
+                                <span>Välj kategori</span>
+                                <span class="icon is-small">
+                                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                              </button>
+                            </div>
+                            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                              <div class="dropdown-content">
+                                <a href="#" class="dropdown-item">
+                                  Gröna växter
+                                </a>
+                                <a class="dropdown-item">
+                                  Blommande växter
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                  Tillbehör
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="filter-items is-hidden-mobile">
+                        <div class="checkboxes">
+                            <p>Skötsel:</p>
+                            <label for="Enkel">Enkel</label>
+                            <input type="checkbox" name="plantcare1" id="Enkel">
+                            <label for="Medium">Medel</label>
+                            <input type="checkbox" name="plantcare2" id="Medium">
+                            <label for="Svår">Svår</label>
+                            <input type="checkbox" name="plantcare3" id="Svår">
+                        </div>
+                    </div>
+                    <div class="filter-items is-hidden-mobile">
+                        <div class="radiobtn">
+                        <p>Höjd:</p>
+                            <label for="20">20 cm</label>
+                            <input type="radio" name="plant-size" id="Enkel" value="20">
+                            <label for="50">50cm</label>
+                            <input type="radio" name="plant-size" id="Medium" value="50">
+                            <label for="100">100 cm</label>
+                            <input type="radio" name="plant-size" id="Svår" value="100">
+                        </div>
+                    </div>
+                    <div class="filter-items is-hidden-mobile">
+                        <div class="range">
+                            <label for="pris">Pris (0-5000 SEK): </label>
+                            <br>
+                            <input type="range" name="pris" id="pris" min="0" max="5000">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+<!-- PRODUKTER-->
+            <div class="column is-three-quarters">
+                <div class="products mb-2">
+                    <!-- Produkt ett -->
+                    <div class="product is-flex is-flex-direction-column is-justify-content-space-between">
+                        <div class="is-flex is-justify-content-center">
+                            <img class="my-img" src="./../images/växt1.jpg" alt="">
+                        </div>
+                        <div class="is-flex is-justify-content-center my-1">
+                            <p class="title is-size-6">Alokasia</p>
+                        </div>
+                        <div class="is-flex is-justify-content-center my-1">
+                            <p class="title is-size-6">79 kr</p>
+                        </div>
+                        <div class="is-flex">
+                            <div class="column is-flex is-justify-content-center is-12 py-0">
+                                <button class="button my-btn has-text-right">KÖP</p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <!-- Produkt två -->
+                    <div class="product is-flex is-flex-direction-column is-justify-content-space-between">
+                        <div class="is-flex is-justify-content-center">
+                            <img class="my-img" src="./../images/växt2.jpg" alt="">
+                        </div>
+                        <div class="is-flex is-justify-content-center my-1">
+                            <p class="title is-size-6">Kalathea</p>
+                        </div>
+                        <div class="is-flex is-justify-content-center my-1">
+                            <p class="title is-size-6">79 kr</p>
+                        </div>
+                        <div class="is-flex">
+                            <div class="column is-flex is-justify-content-center is-12 py-0">
+                                <button class="button my-btn has-text-right">KÖP</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- Produkt tre -->
+                    <div class="product is-flex is-flex-direction-column is-justify-content-space-between">
+                        <div class="is-flex is-justify-content-center">
+                            <img class="my-img" src="./../images/växt3.jpg" alt="">
+                        </div>
+                        <div class="is-flex is-justify-content-center my-1">
+                            <p class="title is-size-6">Plantiplant</p>
+                        </div>
+                        <div class="is-flex is-justify-content-center my-1">
+                            <p class="title is-size-6">119 kr</p>
+                        </div>
+                        <div class="is-flex">
+                            <div class="column is-flex is-justify-content-center is-12 py-0">
+                                <button class="button my-btn">KÖP</p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <!-- Produkt fyra -->
+                    <div class="product is-flex is-flex-direction-column is-justify-content-space-between">
+                        <div class="is-flex is-justify-content-center">
+                            <img class="my-img" src="./../images/växt4.jpg" alt="">
+                        </div>
+                        <div class="is-flex is-justify-content-center my-1">
+                            <p class="title is-size-6">Kalathea</p>
+                        </div>
+                        <div class="is-flex is-justify-content-center my-1">
+                            <p class="title is-size-6">79 kr</p>
+                        </div>
+                        <div class="is-flex">
+                            <div class="column is-flex is-justify-content-center is-12 py-0">
+                                <button class="button my-btn has-text-right">KÖP</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- Produkt fem -->
+                    <div class="product is-flex is-flex-direction-column is-justify-content-space-between">
+                        <div class="is-flex is-justify-content-center">
+                            <img class="my-img" src="./../images/växt5.jpg" alt="">
+                        </div>
+                        <div class="is-flex is-justify-content-center my-1">
+                            <p class="title is-size-6">Alokasia</p>
+                        </div>
+                        <div class="is-flex is-justify-content-center my-1">
+                            <p class="title is-size-6">79 kr</p>
+                        </div>
+                        <div class="is-flex">
+                            <div class="column is-flex is-justify-content-center is-12 py-0">
+                                <button class="button my-btn has-text-right">KÖP</p>
+                            </div>
+                        </div>
+                        <!-- Enskild produkt slut -->
+                    </div>
+                    <!-- Produkt sex -->
+                    <div class="product is-flex is-flex-direction-column is-justify-content-space-between">
+                        <div class="is-flex is-justify-content-center">
+                            <img class="my-img" src="./../images/växt6.jpg" alt="">
+                        </div>
+                        <div class="is-flex is-justify-content-center my-1">
+                            <p class="title is-size-6">Alokasia</p>
+                        </div>
+                        <div class="is-flex is-justify-content-center my-1">
+                            <p class="title is-size-6">79 kr</p>
+                        </div>
+                        <div class="is-flex">
+                            <div class="column is-flex is-justify-content-center is-12 py-0">
+                                <button class="button my-btn has-text-right">KÖP</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+        </div> 
+        </div>
+    </main>
+<!--FOOTER-->    
+    <footer class="my-footer column is-narrow">
+        <div class="content has-text-centered">
+          <div class="columns">
+            <div class="column py-6">
+              <a class="my-link" href="./../start.html">Hem</a>
+              <a class="my-link" href="products.html">Produkter</a>
+              <a class="my-link" href="reviews.html">Kundomdömen</a>
+              <a class="my-link" href="about.html">Om oss</a>
+              <a class="my-link" href="contact.html">Kontakt</a>       
+                     
+            </div>
+            <div class="column">
+              <figure class="image is-256x256 mb-0">
+                <img src="./../images/Artofplants1.svg" alt="Art of plants logo">
+              </figure>
+              <p class="title is-size-6 is-size-7-mobile">Copyright &#169 Art of Plants 2022</p>
+            </div>
+            <div class="column is-justify-content-center">              
+                <p class="title is-size-4 is-size-6-mobile">Följ oss på:</p>
+                <div class="follow-us">
+                <span class="icon is-medium">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </span>
+                <span class="icon is-medium">
+                  <i class="fa-brands fa-linkedin"></i>
+                </span>
+                <span class="icon is-medium">
+                  <i class="fa-brands fa-instagram"></i>
+                </span>
+                <span class="icon is-medium">
+                  <i class="fa-brands fa-tiktok"></i>
+                </span>
+                </div>
+            </div>
+          </div>          
+        </div>
+    </footer>
+
+  </div>
+    
+  <script src="./../main.js"></script>
+</body>
+</html>

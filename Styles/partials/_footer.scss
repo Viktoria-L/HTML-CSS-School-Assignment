@@ -1,0 +1,12 @@
+.my-footer {
+    background-color: $header-color;
+    padding: 0;
+    
+   .column {
+        @include flex($direction: column, $justify:space-evenly, $align: center);
+        .title {
+            color: $light-green;
+        }
+        
+   }
+}
