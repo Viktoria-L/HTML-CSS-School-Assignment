@@ -8,7 +8,7 @@
     margin-top: 10px;
     }
 }
-h1.my-title {
+h1.my-title, h2.my-title {
     @include font($pacifico);
 }
 
@@ -26,12 +26,12 @@ h1.my-title {
        }
     }
 }
-.products {
+.products, .employees {
     @include flex($direction: row, $justify:center, $wrap: wrap);
     gap: 15px; 
 }
 .product {
-    width: 30%;
+    width: 250px;
     height:30%;
     background: $white;
     padding: 5px;
@@ -49,4 +49,52 @@ h1.my-title {
     height: 200px;
     border-radius: 3px;
    
+}
+
+//Kundomdömen
+article.media {
+    width: 60%;
+    @include mobile{
+        width: 90%;
+    }
+}
+.media+.media {
+    border-top: 1px solid $dark-green;
+}
+.media-content{
+    width: 70%;
+}
+article.media figure {
+    text-align:center;
+}
+select.star-rating {
+    @include font;
+}
+.fa-solid.fa-star {
+    color: $dark-green;
+}
+.textarea:focus {
+    border: 1px solid $dark-green;
+}
+
+//Om oss
+.employee-card {
+   width: 300px;
+       background: $white;
+    padding: 5px;
+    border-radius: 3px;
+    @media (max-width: 640px){
+        width:80%;
+    }
+}
+.content{
+    @include mobile {
+        font-size: 14px;
+    }
+}
+.e-mail {
+    color: $light-green;
+    &:hover{
+        color: $dark-green;
+    }
 }

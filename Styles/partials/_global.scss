@@ -27,8 +27,9 @@ html, body.my-body {
 
 body.my-body{
     @include font;
+    color: $dark-green
 }
-.title {
+.title, .card {
     color: $dark-green;
 
 }

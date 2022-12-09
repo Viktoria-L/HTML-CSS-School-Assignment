@@ -28,9 +28,10 @@ html, body.my-body {
 
 body.my-body {
   font-family: "Quicksand", sans-serif;
+  color: #013819;
 }
 
-.title {
+.title, .card {
   color: #013819;
 }
 
@@ -95,7 +96,7 @@ label {
   }
 }
 
-h1.my-title {
+h1.my-title, h2.my-title {
   font-family: "Pacifico", cursive;
 }
 
@@ -117,7 +118,7 @@ h1.my-title {
   margin: 4px 0;
 }
 
-.products {
+.products, .employees {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -127,7 +128,7 @@ h1.my-title {
 }
 
 .product {
-  width: 30%;
+  width: 250px;
   height: 30%;
   background: #FFFFFB;
   padding: 5px;
@@ -147,6 +148,64 @@ h1.my-title {
   width: 80%;
   height: 200px;
   border-radius: 3px;
+}
+
+article.media {
+  width: 60%;
+}
+@media (max-width: 768px) {
+  article.media {
+    width: 90%;
+  }
+}
+
+.media + .media {
+  border-top: 1px solid #013819;
+}
+
+.media-content {
+  width: 70%;
+}
+
+article.media figure {
+  text-align: center;
+}
+
+select.star-rating {
+  font-family: "Quicksand", sans-serif;
+}
+
+.fa-solid.fa-star {
+  color: #013819;
+}
+
+.textarea:focus {
+  border: 1px solid #013819;
+}
+
+.employee-card {
+  width: 300px;
+  background: #FFFFFB;
+  padding: 5px;
+  border-radius: 3px;
+}
+@media (max-width: 640px) {
+  .employee-card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    font-size: 14px;
+  }
+}
+
+.e-mail {
+  color: #B9D989;
+}
+.e-mail:hover {
+  color: #013819;
 }
 
 .my-footer {
