@@ -29,6 +29,7 @@ body.my-body{
     @include font;
     color: $dark-green
 }
+
 .title, .card {
     color: $dark-green;
 
@@ -45,6 +46,9 @@ i.fa-brands{
     }
 }
 label {
-    font-size: 12px;
-    
+    font-size: 14px;
+    display: block;
+    @include desktop{
+        display: inline;
+    }
 }

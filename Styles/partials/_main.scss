@@ -21,9 +21,9 @@ h1.my-title, h2.my-title {
         width:100%;
         min-height: 10%;
         @include flex;
-       .checkboxes {
-        margin: 4px 0;
-       }
+            .checkboxes {
+                margin: 4px 0;
+            }
     }
 }
 .products, .employees {
@@ -39,7 +39,7 @@ h1.my-title, h2.my-title {
     &:hover {
         transform: scale(1.03);
     }
-    @media (max-width: 475px){
+    @media (max-width: 540px) and (min-width: 420px){
         width: 45%;
         height: 30%;
     }
@@ -54,7 +54,7 @@ h1.my-title, h2.my-title {
 //Kundomdömen
 article.media {
     width: 60%;
-    @include mobile{
+    @media (max-width: 600px){
         width: 90%;
     }
 }
@@ -73,6 +73,9 @@ select.star-rating {
 .fa-solid.fa-star {
     color: $dark-green;
 }
+.star-radiobtn label {
+    display: inline;
+}
 .textarea:focus {
     border: 1px solid $dark-green;
 }
@@ -87,6 +90,11 @@ select.star-rating {
         width:80%;
     }
 }
+.image img.employee-img{
+    width: 96px;
+    height: 96px;
+}
+
 .content{
     @include mobile {
         font-size: 14px;
@@ -97,4 +105,24 @@ select.star-rating {
     &:hover{
         color: $dark-green;
     }
+}
+
+//Kontakt
+form {
+    width: 80%;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 0.5rem;
+    
+}
+.contact-labels {
+    display: block;
+    margin-top: 2px;
+    font-weight: 700;
+}
+#email, #referrer, #text {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
 }

@@ -84,28 +84,37 @@
       </section>
       <section class="columns">
 <!--Huset, adress-->        
-        <div class="column is-two-fifths has-background-danger"></div>
+        <div class="column is-two-fifths">
+          <figure class="image is-256x256 my-1 mx-3">
+            <img src="./../images/office.jpg" alt="Art of plants kontor">
+          </figure>
+          <div class="info has-text-centered">
+          <p>Du hittar vår butik på:</p>
+          <p>Skogsvägen 10, 111 10 Stockholm</p>
+          <p>Ring oss gärna på <strong>022-020202</strong></p>       
+        </div>
+        </div>
 <!-- Kontaktformulär -->   
-<form action="">    
-        <div class="column has-background-warning">
+<div class="column">
+          <form>    
           <fieldset>
-          <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+          <label class="contact-labels" for="email">Email: <input id="email" name="email" type="email" required /></label>
 
-          <label for="referrer">How did you hear about us?
+          <label class="contact-labels" for="referrer">Anledning till kontakt?
             <select id="referrer" name="referrer">
-              <option value="">(select one)</option>
-              <option value="1">freeCodeCamp News</option>
-              <option value="2">freeCodeCamp YouTube Channel</option>
-              <option value="3">freeCodeCamp Forum</option>
-              <option value="4">Other</option>
+              <option value="">Välj orsak</option>
+              <option value="1">Leverans</option>
+              <option value="2">Växtskötsel</option>
+              <option value="3">Betalning</option>
+              <option value="4">Annat</option>
             </select>
           </label>
 
-          <label for="bio">Provide a bio:
-            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+          <label class="contact-labels" for="text">Fråga:
+            <textarea id="text" name="text" rows="3" cols="30" placeholder="Skriv din fråga här..."></textarea>
           </label>
         </fieldset>
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Skicka" />
         </form> 
         </div>
       </section> 

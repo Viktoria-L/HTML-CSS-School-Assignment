@@ -50,7 +50,13 @@ i.fa-brands {
 }
 
 label {
-  font-size: 12px;
+  font-size: 14px;
+  display: block;
+}
+@media (min-width: 1024px) {
+  label {
+    display: inline;
+  }
 }
 
 .header nav {
@@ -137,7 +143,7 @@ h1.my-title, h2.my-title {
 .product:hover {
   transform: scale(1.03);
 }
-@media (max-width: 475px) {
+@media (max-width: 540px) and (min-width: 420px) {
   .product {
     width: 45%;
     height: 30%;
@@ -153,7 +159,7 @@ h1.my-title, h2.my-title {
 article.media {
   width: 60%;
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   article.media {
     width: 90%;
   }
@@ -179,6 +185,10 @@ select.star-rating {
   color: #013819;
 }
 
+.star-radiobtn label {
+  display: inline;
+}
+
 .textarea:focus {
   border: 1px solid #013819;
 }
@@ -195,6 +205,11 @@ select.star-rating {
   }
 }
 
+.image img.employee-img {
+  width: 96px;
+  height: 96px;
+}
+
 @media (max-width: 768px) {
   .content {
     font-size: 14px;
@@ -206,6 +221,26 @@ select.star-rating {
 }
 .e-mail:hover {
   color: #013819;
+}
+
+form {
+  width: 80%;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 0.5rem;
+}
+
+.contact-labels {
+  display: block;
+  margin-top: 2px;
+  font-weight: 700;
+}
+
+#email, #referrer, #text {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
 }
 
 .my-footer {
