@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +20,7 @@
       <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
               <a class="navbar-item" href="./../start.html">
-                <img class="my-logo" src="./../images/Smallsvg2.svg" width="112" height="68">
+                <img class="my-logo" src="./../images/nylogo.png" width="112" height="68" alt="Art of plants logo">
                
               </a>
               <div class="navbar-item">
@@ -59,7 +59,7 @@
                   <a class="navbar-item my-link" href="about.html">
                     Om oss
                   </a>
-                  <a class="navbar-item my-link" href="contact.html">
+                  <a class="navbar-item my-link nav-active-page" href="contact.html">
                     Kontakt
                   </a>
                  
@@ -84,9 +84,9 @@
       </section>
       <section class="columns">
 <!--Huset, adress-->        
-        <div class="column is-two-fifths">
-          <figure class="image is-256x256 my-1 mx-3">
-            <img src="./../images/office.jpg" alt="Art of plants kontor">
+        <div class="column">
+          <figure class="image my-1 mx-3">
+            <img src="./../images/office.jpg" alt="Art of plants kontorsbyggnad">
           </figure>
           <div class="info has-text-centered">
           <p>Du hittar vår butik på:</p>
@@ -100,8 +100,8 @@
           <fieldset>
           <label class="contact-labels" for="email">Email: <input id="email" name="email" type="email" required /></label>
 
-          <label class="contact-labels" for="referrer">Anledning till kontakt?
-            <select id="referrer" name="referrer">
+          <label class="contact-labels" for="reason">Anledning till kontakt?
+            <select id="reason" name="reason">
               <option value="">Välj orsak</option>
               <option value="1">Leverans</option>
               <option value="2">Växtskötsel</option>
@@ -129,7 +129,7 @@
               <a class="my-link" href="products.html">Produkter</a>
               <a class="my-link" href="reviews.html">Kundomdömen</a>
               <a class="my-link" href="about.html">Om oss</a>
-              <a class="my-link" href="contact.html">Kontakt</a>       
+              <a class="my-link nav-active-page" href="contact.html">Kontakt</a>       
                      
             </div>
             <div class="column">
@@ -161,6 +161,6 @@
 
   </div>
     
-  <script src="main.js"></script>
+  <script src="./../main.js"></script>
 </body>
 </html>

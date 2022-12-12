@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +20,7 @@
       <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
               <a class="navbar-item" href="./../start.html">
-                <img class="my-logo" src="./../images/nylogo.png" width="112" height="68">
+                <img class="my-logo" src="./../images/nylogo.png" width="112" height="68" alt="Art of plants logo">
               </a>
               <div class="navbar-item">
                 <div class="buttons">
@@ -48,7 +48,7 @@
                     Hem                 
                   </a>
             
-                  <a class="navbar-item my-link" href="products.html">
+                  <a class="navbar-item my-link nav-active-page" href="products.html">
                     Produkter
                   </a>
                   <a class="navbar-item my-link" href="reviews.html">
@@ -83,39 +83,26 @@
         </section> 
         <div class="columns">
 <!--SORTERING-->
-            <div class="column is-flex is-justify-content-center">
+            <section class="column is-flex is-justify-content-center">
                 <div class="sort">
                     <div class="filter-items is-flex is-justify-content-space-between">
                         <div class="is-flex">
-                            <p class="title is-6 my-2 mx-2">Filter</p>        
+                            <p class="title filter is-6 my-2 mx-2">Filter</p>        
                         </div>
                                     
-                            <div><p class="title is-6 my-2 mx-2">Reset</p></div>
+                        <div>
+                          <p class="title reset is-6 my-2 mx-2">Reset</p>
+                        </div>
                     </div>
                     <div class="filter-items is-hidden-mobile">
-                        <div class="dropdown my-1">
-                            <div class="dropdown-trigger">
-                              <button class="button is-small" aria-haspopup="true" aria-controls="dropdown-menu">
-                                <span>Välj kategori</span>
-                                <span class="icon is-small">
-                                  <i class="fas fa-angle-down" aria-hidden="true"></i>
-                                </span>
-                              </button>
-                            </div>
-                            <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                              <div class="dropdown-content">
-                                <a href="#" class="dropdown-item">
-                                  Gröna växter
-                                </a>
-                                <a class="dropdown-item">
-                                  Blommande växter
-                                </a>
-                                <a href="#" class="dropdown-item">
-                                  Tillbehör
-                                </a>
-                              </div>
-                            </div>
-                          </div>
+                        <div class="dropdown is-align-self-center">
+                          <select name="category-dropdown" class="dropdown">
+                            <option value="">Välj kategori</option>
+                            <option value="">Gröna växter</option>
+                            <option value="">Blommande växter</option>
+                            <option value="">Tillbehör</option>
+                          </select>                            
+                        </div>
                     </div>
                     <div class="filter-items is-hidden-mobile">
                         <div class="checkboxes">
@@ -131,12 +118,12 @@
                     <div class="filter-items is-hidden-mobile">
                         <div class="radiobtn">
                         <p>Höjd:</p>
-                            <label for="20">20 cm</label>
-                            <input type="radio" name="plant-size" id="Enkel" value="20">
-                            <label for="50">50cm</label>
-                            <input type="radio" name="plant-size" id="Medium" value="50">
-                            <label for="100">100 cm</label>
-                            <input type="radio" name="plant-size" id="Svår" value="100">
+                            <label for="twenty">20 cm</label>
+                            <input type="radio" name="plant-size" id="twenty" value="20">
+                            <label for="fifty">50cm</label>
+                            <input type="radio" name="plant-size" id="fifty" value="50">
+                            <label for="hundred">100 cm</label>
+                            <input type="radio" name="plant-size" id="hundred" value="100">
                         </div>
                     </div>
                     <div class="filter-items is-hidden-mobile">
@@ -146,120 +133,273 @@
                             <input type="range" name="pris" id="pris" min="0" max="5000">
                         </div>
                     </div>
+                    <div class="filter-items is-hidden-mobile">
+                      <div class="range">
+                          <button class="button my-btn mt-1">Filtrera</button>
+                      </div>
+                  </div>
 
                 </div>
-            </div>
+            </section>
 <!-- PRODUKTER-->
-            <div class="column is-three-quarters">
+            <section class="column is-three-quarters">
                 <div class="products mb-2">
                     <!-- Produkt ett -->
                     <div class="product is-flex is-flex-direction-column is-justify-content-space-between">
-                        <div class="is-flex is-justify-content-center">
-                            <img class="my-img" src="./../images/thumbnail_image2.png" alt="">
-                        </div>
-                        <div class="is-flex is-justify-content-center my-1">
-                            <p class="title is-size-6">Alokasia</p>
-                        </div>
-                        <div class="is-flex is-justify-content-center my-1">
-                            <p class="title is-size-6">79 kr</p>
-                        </div>
-                        <div class="is-flex">
-                            <div class="column is-flex is-justify-content-center is-12 py-0">
-                                <button class="button my-btn has-text-right">KÖP</p>
-                            </div>
-                        </div>                      
+                      <div class="is-flex is-justify-content-center">
+                          <img class="my-img" src="./../images/calathea2.png" alt="gröna blad kalathea">
+                      </div>
+                      <div class="is-flex is-justify-content-center my-1">
+                          <p class="title is-size-6">Kalathea </p>
+                      </div>
+                      <div class="is-flex is-justify-content-center my-1">
+                        <p class="title is-size-7 is-italic">Svår</p>                       
+                      </div>
+                      <div class="is-flex is-justify-content-center my-1">
+                          <p class="title is-size-6">79 kr</p>
+                      </div>
+                      <div class="is-flex">
+                          <div class="column is-flex is-justify-content-space-between is-12 py-0">
+                            <div class="select-size is-align-self-center">
+                              <select name="size">
+                                <option selected hidden>Höjd:</option>
+                                <option>20 cm</option>
+                                <option>50 cm</option>
+                                <option>100 cm</option>
+                            </select>
+                          </div>
+                            
+                            <button class="button my-btn has-text-right">KÖP</button>
+                          </div>
+                      </div>         
                     </div>
+                   
                     <!-- Produkt två -->
                     <div class="product is-flex is-flex-direction-column is-justify-content-space-between">
-                        <div class="is-flex is-justify-content-center">
-                            <img class="my-img" src="./../images/växt2.jpg" alt="">
-                        </div>
-                        <div class="is-flex is-justify-content-center my-1">
-                            <p class="title is-size-6">Kalathea</p>
-                        </div>
-                        <div class="is-flex is-justify-content-center my-1">
-                            <p class="title is-size-6">79 kr</p>
-                        </div>
-                        <div class="is-flex">
-                            <div class="column is-flex is-justify-content-center is-12 py-0">
-                                <button class="button my-btn has-text-right">KÖP</p>
-                            </div>
-                        </div>
-                        
+                      <div class="is-flex is-justify-content-center">
+                          <img class="my-img" src="./../images/marmorblad.png" alt="marmorblad kalathea gröna blad med mönster">
+                      </div>
+                      <div class="is-flex is-justify-content-center my-1">
+                          <p class="title is-size-6">Kalathea Marmorblad</p>
+                      </div>
+                      <div class="is-flex is-justify-content-center my-1">
+                        <p class="title is-size-7 is-italic">Svår</p>                       
+                      </div>
+                      <div class="is-flex is-justify-content-center my-1">
+                          <p class="title is-size-6">119 kr</p>
+                      </div>
+                      <div class="is-flex">                          
+                          <div class="column is-flex is-justify-content-space-between is-12 py-0">
+                            <div class="select-size is-align-self-center">
+                              <select name="size">
+                                <option selected hidden>Höjd:</option>
+                                <option disabled>20 cm</option>
+                                <option>50 cm</option>
+                                <option>100 cm</option>
+                            </select>
+                          </div>
+                              <button class="button my-btn has-text-right">KÖP</button>
+                          </div>
+                      </div>         
                     </div>
+
                     <!-- Produkt tre -->
                     <div class="product is-flex is-flex-direction-column is-justify-content-space-between">
-                        <div class="is-flex is-justify-content-center">
-                            <img class="my-img" src="./../images/combat.png" alt="">
-                        </div>
-                        <div class="is-flex is-justify-content-center my-1">
-                            <p class="title is-size-6">Plantiplant</p>
-                        </div>
-                        <div class="is-flex is-justify-content-center my-1">
-                            <p class="title is-size-6">119 kr</p>
-                        </div>
-                        <div class="is-flex">
-                            <div class="column is-flex is-justify-content-center is-12 py-0">
-                                <button class="button my-btn">KÖP</p>
-                            </div>
-                        </div>
-                       
+                      <div class="is-flex is-justify-content-center">
+                          <img class="my-img" src="./../images/calathea.png" alt="Grön växt kalathea">
+                      </div>
+                      <div class="is-flex is-justify-content-center my-1">
+                          <p class="title is-size-6">Kalathea Medallion</p>
+                      </div>
+                      <div class="is-flex is-justify-content-center my-1">
+                        <p class="title is-size-7 is-italic">Medel</p>                       
+                      </div>
+                      <div class="is-flex is-justify-content-center my-1">
+                          <p class="title is-size-6">99 kr</p>
+                      </div>
+                      <div class="is-flex">
+                          <div class="column is-flex is-justify-content-space-between is-12 py-0">
+                            <div class="select-size is-align-self-center">
+                              <select name="size">
+                                <option selected hidden>Höjd:</option>
+                                <option>20 cm</option>
+                                <option>50 cm</option>
+                                <option disabled>100 cm</option>
+                            </select>
+                          </div>
+                              <button class="button my-btn has-text-right">KÖP</button>
+                          </div>
+                      </div>
                     </div>
+                                   
                     <!-- Produkt fyra -->
                     <div class="product is-flex is-flex-direction-column is-justify-content-space-between">
                         <div class="is-flex is-justify-content-center">
-                            <img class="my-img" src="./../images/amazonia.png" alt="">
+                            <img class="my-img" src="./../images/amazonia.png" alt="Rosa gul palettblad">
                         </div>
                         <div class="is-flex is-justify-content-center my-1">
-                            <p class="title is-size-6">Kalathea</p>
+                            <p class="title is-size-6">Palettblad Amazonia</p>
+                        </div>
+                        <div class="is-flex is-justify-content-center my-1">
+                          <p class="title is-size-7 is-italic">Svår</p>                       
                         </div>
                         <div class="is-flex is-justify-content-center my-1">
                             <p class="title is-size-6">79 kr</p>
                         </div>
                         <div class="is-flex">
-                            <div class="column is-flex is-justify-content-center is-12 py-0">
-                                <button class="button my-btn has-text-right">KÖP</p>
+                            <div class="column is-flex is-justify-content-space-between is-12 py-0">
+                              <div class="select-size is-align-self-center">
+                                <select name="size">
+                                  <option>20 cm</option>                                  
+                              </select>
+                            </div>
+                                <button class="button my-btn has-text-right">KÖP</button>
                             </div>
                         </div>
-                        
-                    </div>
+                      </div>
+                    
                     <!-- Produkt fem -->
                     <div class="product is-flex is-flex-direction-column is-justify-content-space-between">
-                        <div class="is-flex is-justify-content-center">
-                            <img class="my-img" src="./../images/calathea.png" alt="">
-                        </div>
-                        <div class="is-flex is-justify-content-center my-1">
-                            <p class="title is-size-6">Alokasia</p>
-                        </div>
-                        <div class="is-flex is-justify-content-center my-1">
-                            <p class="title is-size-6">79 kr</p>
-                        </div>
-                        <div class="is-flex">
-                            <div class="column is-flex is-justify-content-center is-12 py-0">
-                                <button class="button my-btn has-text-right">KÖP</p>
-                            </div>
-                        </div>
-                        <!-- Enskild produkt slut -->
+                      <div class="is-flex is-justify-content-center">
+                          <img class="my-img" src="./../images/palettblad1.png" alt="Ljusrosa beige palettblad">
+                      </div>
+                      <div class="is-flex is-justify-content-center my-1">
+                          <p class="title is-size-6">Palettblad</p>
+                      </div>
+                      <div class="is-flex is-justify-content-center my-1">
+                        <p class="title is-size-7 is-italic">Enkel</p>                       
+                      </div>
+                      <div class="is-flex is-justify-content-center my-1">
+                          <p class="title is-size-6">99 kr</p>
+                      </div>
+                      <div class="is-flex">
+                          <div class="column is-flex is-justify-content-space-between is-12 py-0">
+                            <div class="select-size is-align-self-center">
+                              <select name="size">
+                                <option selected hidden>Höjd:</option>
+                                <option>20 cm</option>
+                                <option>50 cm</option>
+                                <option disabled>100 cm</option>
+                            </select>
+                          </div>
+                              <button class="button my-btn has-text-right">KÖP</button>
+                              </div>
+                      </div>                    
                     </div>
+                    
                     <!-- Produkt sex -->
                     <div class="product is-flex is-flex-direction-column is-justify-content-space-between">
-                        <div class="is-flex is-justify-content-center">
-                            <img class="my-img" src="./../images/calathea2.png" alt="">
-                        </div>
-                        <div class="is-flex is-justify-content-center my-1">
-                            <p class="title is-size-6">Alokasia</p>
-                        </div>
-                        <div class="is-flex is-justify-content-center my-1">
-                            <p class="title is-size-6">79 kr</p>
-                        </div>
-                        <div class="is-flex">
-                            <div class="column is-flex is-justify-content-center is-12 py-0">
-                                <button class="button my-btn has-text-right">KÖP</p>
-                            </div>
-                        </div>         
+                      <div class="is-flex is-justify-content-center">
+                          <img class="my-img" src="./../images/thumbnail_image2.png" alt="Grön rosa palettblad">
+                      </div>
+                      <div class="is-flex is-justify-content-center my-1">
+                          <p class="title is-size-6">Palettblad Melon</p>
+                      </div>
+                      <div class="is-flex is-justify-content-center my-1">
+                        <p class="title is-size-7 is-italic">Enkel</p>                       
+                      </div>
+                      <div class="is-flex is-justify-content-center my-1">
+                          <p class="title is-size-6">69 kr</p>
+                      </div>
+                      <div class="is-flex">
+                          <div class="column is-flex is-justify-content-space-between is-12 py-0">
+                            <div class="select-size is-align-self-center">
+                              <select name="size">                            
+                                <option>20 cm</option>
+                            </select>
+                          </div>
+                              <button class="button my-btn has-text-right">KÖP</button>
+                          </div>
+                      </div>                      
                     </div>
+                    
+                    <!-- Produkt sju -->
+                    <div class="product is-flex is-flex-direction-column is-justify-content-space-between">
+                      <div class="is-flex is-justify-content-center">
+                          <img class="my-img" src="./../images/palettblad2.png" alt="vitgrön palettblad">
+                      </div>
+                      <div class="is-flex is-justify-content-center my-1">
+                          <p class="title is-size-6">Palettblad</p>
+                      </div>
+                      <div class="is-flex is-justify-content-center my-1">
+                        <p class="title is-size-7 is-italic">Svår</p>                       
+                      </div>
+                      <div class="is-flex is-justify-content-center my-1">
+                          <p class="title is-size-6">69 kr</p>
+                      </div>
+                      <div class="is-flex">
+                          <div class="column is-flex is-justify-content-space-between is-12 py-0">
+                            <div class="select-size is-align-self-center">
+                              <select name="size">
+                                <option selected hidden>Höjd:</option>
+                                <option>20 cm</option>
+                                <option disabled>50 cm</option>
+                                <option>100 cm</option>
+                            </select>
+                          </div>
+                              <button class="button my-btn has-text-right">KÖP</button>
+                          </div>
+                      </div>         
+                    </div>
+                 
+                  <!-- Produkt åtta -->
+                    <div class="product is-flex is-flex-direction-column is-justify-content-space-between">
+                      <div class="is-flex is-justify-content-center">
+                          <img class="my-img" src="./../images/combat.png" alt="Palettblad röd kamoflauge">
+                      </div>
+                      <div class="is-flex is-justify-content-center my-1">
+                          <p class="title is-size-6">Palettblad Combat</p>
+                      </div>
+                      <div class="is-flex is-justify-content-center my-1">
+                        <p class="title is-size-7 is-italic">Medel</p>                       
+                      </div>
+                      <div class="is-flex is-justify-content-center my-1">
+                          <p class="title is-size-6">119 kr</p>
+                      </div>
+                      <div class="is-flex">
+                          <div class="column is-flex is-justify-content-space-between is-12 py-0">
+                            <div class="select-size is-align-self-center">
+                              <select name="size">
+                                <option selected hidden>Höjd:</option>
+                                <option>20 cm</option>
+                                <option>50 cm</option>
+                                <option>100 cm</option>
+                            </select>
+                          </div>
+                              <button class="button my-btn">KÖP</button>
+                          </div>
+                      </div>
+                   
+                    </div>
+                
+                  <!-- Produkt nio -->
+                  <div class="product is-flex is-flex-direction-column is-justify-content-space-between">
+                    <div class="is-flex is-justify-content-center">
+                        <img class="my-img" src="./../images/palettblad3.png" alt="ljusgrön palettblad">
+                    </div>
+                    <div class="is-flex is-justify-content-center my-1">
+                        <p class="title is-size-6">Palettblad</p>
+                    </div>
+                    <div class="is-flex is-justify-content-center my-1">
+                      <p class="title is-size-7 is-italic">Enkel</p>                       
+                    </div>
+                    <div class="is-flex is-justify-content-center my-1">
+                        <p class="title is-size-6">69 kr</p>
+                    </div>
+                    <div class="is-flex">
+                        <div class="column is-flex is-justify-content-space-between is-12 py-0">
+                          <div class="select-size is-align-self-center">
+                            <select name="size">                           
+                              <option>20 cm</option>
+                          </select>
+                        </div>
+                            <button class="button my-btn has-text-right">KÖP</button>
+                        </div>
+                    </div>         
+                  </div>
+              
                 </div>
-        </div> 
+            </section> 
         </div>
     </main>
 <!--FOOTER-->    
@@ -268,7 +408,7 @@
           <div class="columns">
             <div class="column py-6">
               <a class="my-link" href="./../start.html">Hem</a>
-              <a class="my-link" href="products.html">Produkter</a>
+              <a class="my-link nav-active-page" href="products.html">Produkter</a>
               <a class="my-link" href="reviews.html">Kundomdömen</a>
               <a class="my-link" href="about.html">Om oss</a>
               <a class="my-link" href="contact.html">Kontakt</a>       

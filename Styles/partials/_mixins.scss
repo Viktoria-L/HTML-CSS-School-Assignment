@@ -22,7 +22,6 @@
   }
 }
 
-//Standard-font
 @mixin font($font: $quicksand){
     font-family: $font;
 }
@@ -38,9 +37,4 @@
   justify-content: $justify;
   align-items: $align;
   flex-wrap: $wrap;
-}
-
-//TA BORT DESSA SEN
-@mixin b {
-  border: 1px solid black;
 }

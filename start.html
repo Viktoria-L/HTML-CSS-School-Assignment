@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +20,7 @@
       <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
               <a class="navbar-item" href="start.html">
-                <img class="my-logo" src="./images/nylogo.png" width="112" height="68">
+                <img class="my-logo" src="./images/nylogo.png" width="112" height="68" alt="Art of plants logo">
               </a>
               <div class="navbar-item">
                 <div class="buttons">
@@ -44,7 +44,7 @@
             <div id="navbarBasicExample" class="navbar-menu">
                                   
               <div class="navbar-end">
-                <a class="navbar-item my-link" href="start.html">
+                <a class="navbar-item my-link nav-active-page" href="start.html">
                     Hem                 
                   </a>
             
@@ -79,21 +79,41 @@
 <!-- MAIN-->
     <main class="column mt-3">
 
-      <div class="columns">
+      <section class="columns">
         <div class="column ml-4 is-flex is-flex-direction-column">
-          <div class="welcome my-border py-6">
+          <div class="my-border py-6">
           <p class="title is-size-3-desktop is-size-5-touch has-text-centered">Välkommen till oss på</p>
           <h1 class="title is-size-3-desktop is-size-4-tablet my-title has-text-centered">Art of Plants</h1>
+          <p class="title is-size-5-desktop is-size-6-tablet is-size-6-mobile has-text-centered is-italic">Växter från hela världen levererade till dig</p>
           </div>
-          <div class="column is-flex is-justify-content-center is-align-items-center"><button class="button my-btn has-text-weight-bold is-large">SHOP NOW</button></div>
+          <div class="column is-flex is-justify-content-center is-align-items-center">
+           <a href="./pages/products.html" class="button my-btn has-text-weight-bold is-medium">UPPTÄCK VÅRA VÄXTER</a>
+          </div>
         </div>
         <div class="column">
           <figure class="image">
-            <img src="./images/monstera.jpg" alt="Monstera">
+            <img src="./images/monstera.jpg" alt="Monstera grön växt med stora blad">
           </figure>
         </div>
-        
-      </div>
+      </section>
+
+      <section class="section">
+        <h1 class="title is-size-4-mobile my-title has-text-centered is-underlined">Varför Art of Plants</h1>
+      </section>
+
+      <section class="columns">
+        <div class="column">
+          <h2 class="title my-title is-size-4-mobile has-text-centered">Hemleverans</h2>
+          <p class="title is-size-5-desktop is-size-6-tablet is-size-6-mobile has-text-centered is-italic">Få växter hemlevererade utan kostnad inom 3 arbetsdagar. Säkert paketerade.</p>
+        </div>
+        <div class="column">
+          <h2 class="title my-title is-size-4-mobile has-text-centered">Experthjälp</h2>
+          <p class="title is-size-5-desktop is-size-6-tablet is-size-6-mobile has-text-centered is-italic">Personlig service och växtstöd online. Allt för att du ska känna dig trygg med dina nya växter.</p></div>
+        <div class="column mb-2">
+          <h2 class="title my-title is-size-4-mobile has-text-centered">Bra priser</h2>
+          <p class="title is-size-5-desktop is-size-6-tablet is-size-6-mobile has-text-centered is-italic">Då vi odlar många av världens växter själva kan vi erbjuda bra priser för toppen-kvalité.</p>
+        </div>
+      </section>
 
     </main>
     <!--FOOTER-->
@@ -101,7 +121,7 @@
         <div class="content has-text-centered">
           <div class="columns">
             <div class="column py-6">
-              <a class="my-link" href="start.html">Hem</a>
+              <a class="my-link nav-active-page" href="start.html">Hem</a>
               <a class="my-link" href="./pages/products.html">Produkter</a>
               <a class="my-link" href="./pages/reviews.html">Kundomdömen</a>
               <a class="my-link" href="./pages/about.html">Om oss</a>
@@ -110,7 +130,7 @@
             </div>
             <div class="column">
               <figure class="image is-256x256 mb-0">
-                <img src="./images/Artofplants1.svg" alt="Monstera green plant">
+                <img src="./images/Artofplants1.svg" alt="Art of plants logo">
               </figure>
               <p class="title is-size-6 is-size-7-mobile">Copyright &#169; Art of Plants 2022</p>
             </div>

@@ -1,22 +1,8 @@
-.my-border {
-    @include tablet {
-        @include border;
-    }
-}
-.tile.is-ancestor.my-tile {
-    @include mobile{
-    margin-top: 10px;
-    }
-}
-h1.my-title, h2.my-title {
-    @include font($pacifico);
-}
-
-//Produktsidan
+//PRODUKTSIDAN
 .sort {
     width: 80%;
     height: 50%;
-    .filter-items {
+    .filter-items:not(:last-child) {
         border-bottom: 1px solid $dark-green;
         width:100%;
         min-height: 10%;
@@ -26,8 +12,13 @@ h1.my-title, h2.my-title {
             }
     }
 }
+.filter, .reset {
+    &:hover {
+        cursor: pointer;
+    }
+}
 .products, .employees {
-    @include flex($direction: row, $justify:center, $wrap: wrap);
+    @include flex($direction: row, $justify:center, $align: stretch, $wrap: wrap);
     gap: 15px; 
 }
 .product {
@@ -39,6 +30,7 @@ h1.my-title, h2.my-title {
     &:hover {
         transform: scale(1.03);
     }
+    //Media query för att få två produkter bredvid varandra ner till 420 px-enheter
     @media (max-width: 540px) and (min-width: 420px){
         width: 45%;
         height: 30%;
@@ -47,20 +39,21 @@ h1.my-title, h2.my-title {
 .my-img {
     width: 80%;
     height: 200px;
-    border-radius: 3px;
-   
+    border-radius: 3px;  
 }
 
-//Kundomdömen
+
+//KUNDOMDÖMEN
 article.media {
-    width: 60%;
-    @media (max-width: 600px){
-        width: 90%;
+    width: 90%;
+    @include tablet{
+        width: 60%;
     }
 }
 .media+.media {
     border-top: 1px solid $dark-green;
 }
+//för att göra kommentarsrutan större
 .media-content{
     width: 70%;
 }
@@ -80,15 +73,12 @@ select.star-rating {
     border: 1px solid $dark-green;
 }
 
-//Om oss
+//OM OSS
 .employee-card {
-   width: 300px;
-       background: $white;
+    width: 300px;
+    background: $white;
     padding: 5px;
     border-radius: 3px;
-    @media (max-width: 640px){
-        width:80%;
-    }
 }
 .image img.employee-img{
     width: 96px;
@@ -97,7 +87,7 @@ select.star-rating {
 
 .content{
     @include mobile {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 }
 .e-mail {
@@ -107,7 +97,7 @@ select.star-rating {
     }
 }
 
-//Kontakt
+//KONTAKT
 form {
     width: 80%;
     max-width: 500px;
@@ -121,7 +111,7 @@ form {
     margin-top: 2px;
     font-weight: 700;
 }
-#email, #referrer, #text {
+#email, #reason, #text {
   margin: 10px 0 0 0;
   width: 100%;
   min-height: 2em;
