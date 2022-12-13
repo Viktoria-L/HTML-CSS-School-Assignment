@@ -17,6 +17,15 @@ h1.my-title, h2.my-title {
   font-family: "Pacifico", cursive;
 }
 
+.columns {
+  margin-right: 0;
+  margin-left: 0;
+}
+.columns .column {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .is-fullheight {
   height: 100vh;
 }
