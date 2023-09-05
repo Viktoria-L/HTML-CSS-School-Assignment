@@ -36,7 +36,7 @@ h1.my-title, h2.my-title {
   transition-duration: 0.4s;
 }
 .button.my-btn:hover {
-  background: hsl(57deg, 96%, 45%);
+  background: hsl(57, 96%, 45%);
 }
 .button.my-btn:focus {
   border: #fcf45d;
