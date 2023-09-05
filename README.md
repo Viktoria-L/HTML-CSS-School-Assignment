@@ -6,6 +6,8 @@ Mitt påhittade företag blev en växtbutik.
 
 Färdigt projekt: [Art of Plants](https://viktoria-l.github.io/HTML-CSS-School-Assignment/)
 
+## Uppgiften är genomförd med HTML och CSS.
+
 ## Grafisk profil 🖌️
 Välj 3-6 färgkoder som ska användas konsekvent för hela sidan. Ni får använda fler färger, men dessa ska vara vanligt förekommande.
 Välj 2-3 typsnitt som ni vill använda (Vanligt är att man har ett typsnitt för rubriker och ett annat typsnitt för brödtext).
