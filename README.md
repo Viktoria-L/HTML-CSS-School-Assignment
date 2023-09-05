@@ -1,35 +1,30 @@
-# Projektarbete - Företagssida
+# Projektarbete - Företagssida 🌻 🌱
 
-Er uppgift är att skapa en webbplats för ett påhittat företag. Företaget ska sälja en produkt eller tjänst av eget val. 
+Er uppgift är att skapa en webbplats för ett påhittat företag. Företaget ska sälja en produkt eller tjänst av eget val.
+Mitt påhittade företag blev en växtbutik.
 
-Skapa en wireframe och/eller mockup i valfritt verktyg för de olika sidorna som ni sedan utgår ifrån under ert arbete. För att underlätta arbetet, börja med att ta fram en företagsprofil:
-
-## Grafisk profil 
+## Grafisk profil 🖌️
 Välj 3-6 färgkoder som ska användas konsekvent för hela sidan. Ni får använda fler färger, men dessa ska vara vanligt förekommande.
 Välj 2-3 typsnitt som ni vill använda (Vanligt är att man har ett typsnitt för rubriker och ett annat typsnitt för brödtext).
 Hitta på ett valfritt företagsnamn + skapa en företagslogga (denna ska finnas som en bildfil i projektet t.ex jpeg, png, svg etc.
 
 Webbplatsen ska bestå av en Startsida samt minst följande fyra sidor -  Om oss, Produkt(er), Referenser och Kontakt. 
-
-### Startsida 
+### Startsida
 
 Det ska tydligt framgå vilka företaget är, och vad de säljer för produkt/tjänst.
 Det ska även finnas en CTA (Call-to-action - kan vara en knapp, en bildlänk etc) som tar användaren till produktsidan.
 
 ### Om oss
-
 Historik om företaget.
 Ska innehålla ett företagsmotto/catchphrase.
 Anställda på företaget - För varje anställd ska det finnas bild, roll i företaget, företagsmail samt en kort beskrivning om personen (minst 6 anställda).
 
 ### Produktsida
-
 Sida som innehåller all information kring de produkter/tjänster företaget erbjuder.
 Det ska erbjudas antingen flera olika produkter tjänster, om det är en produkt/tjänst ska den finnas i olika varianter med olika prisklasser.
 Knappar för att köpa/beställa produkten/tjänsten (funktionalitet krävs ej).
 
 ### Referenser
-
 Ska innehålla kundrecensioner av produkt eller tjänster. Dessa recensioner ska innehålla en kort kommentar samt betyg (valfri betygsskala). Recensionerna kan vara skrivna av företag och/eller privatpersoner beroende på vad för typ av produkt/tjänst företaget säljer.
 
 ### Kontakt
