@@ -1,7 +1,10 @@
 # Projektarbete - Företagssida 🌻 🌱
 
 Er uppgift är att skapa en webbplats för ett påhittat företag. Företaget ska sälja en produkt eller tjänst av eget val.
+
 Mitt påhittade företag blev en växtbutik.
+
+Färdigt projekt: [Art of Plants](https://viktoria-l.github.io/HTML-CSS-School-Assignment/)
 
 ## Grafisk profil 🖌️
 Välj 3-6 färgkoder som ska användas konsekvent för hela sidan. Ni får använda fler färger, men dessa ska vara vanligt förekommande.
@@ -45,3 +48,7 @@ Footer
 Företagslogga
 Länkar till samtliga undersidor.
 Copyright-text
+
+![image](https://github.com/Viktoria-L/HTML-CSS-School-Assignment/assets/113613194/d16e29ea-6483-4920-bdc1-b26a848b38d1)
+![image](https://github.com/Viktoria-L/HTML-CSS-School-Assignment/assets/113613194/3fca5cdf-3868-4be5-81bf-d5ae4cad8792)
+
